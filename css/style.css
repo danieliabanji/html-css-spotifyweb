@@ -33,7 +33,7 @@ a:hover{
     color: var(--text-white);
 }
 
-.d-flex{
+.flex{
     display: flex;
 }
 
@@ -82,7 +82,7 @@ aside{
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: var(--black-opacity);
     height: 100px;
     width: calc(100% - 230px);
     padding-top: 25px;
@@ -125,9 +125,125 @@ aside{
     content: "";
     height: 2px;
     width: 40px;
-    background-color: #94dd25;
+    background-color: var(--lime-green);
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* CONTENUTO RECENTLY PLAYED */
+
+.container-played h2{
+    color: var(--text-white);
+    padding: 20px 0px;
+    margin-left: 20px;
+}
+/* RECENTLY PLAYED LIST */
+.played-list{
+    flex-wrap: nowrap;
+    margin-left: 10px;
+}
+
+.played-element{
+    flex-basis: calc(100% / 6);
+    margin: 0px 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+/* RECENTLY PLAYED IMMAGINI CON LAYOVER */
+.played-element .cover,
+.played-element .cover-rounded{
+    position: relative;
+}
+
+.played-element .cover img,
+.played-element .cover-rounded img{
+    max-width: 100%;
+}
+
+.played-element .cover .img-layover,
+.played-element .cover-rounded .img-layover{
+    font-size: 70px;
+    color: var(--text-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.played-element:hover{
+    cursor: pointer;
+}
+
+.played-element:hover .cover img,
+.played-element:hover .cover-rounded img{
+    opacity: 0.5;
+}
+
+.played-element:hover .cover .img-layover,
+.played-element:hover .cover-rounded .img-layover{
+    display: block;
+}
+/* RECENTLY PLAYED TESTO */
+.played-element .cover-text h3{
+    color: var(--text-white);
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+.played-element .cover-text p{
+    color: var(--text-grey);
+    font-size: 12px;
+    padding-top: 10px;
+}
+/* FINE RECENTLY PLAYED */
+
+/* CONTENUNTO CREATE */
+.container-create{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-create h2{
+    color: var(--text-white);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+
+.container-create p {
+    color: var(--text-grey);
+    font-size: 12px;
+    margin-top: 10px;
+    padding-bottom: 25px;
+    margin-left: 20px;
+}
+/* FINE CONTENUTO CREATE */
+
+/* CONTENITORE ARTIST */
+.container-artist{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-artist h2{
+    color: var(--text-white);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+
+.container-artist p {
+    color: var(--text-grey);
+    font-size: 12px;
+    padding-bottom: 25px;
+    margin-left: 20px;
+  }
+.container-artist .cover-rounded img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+/* FINE CONTENITORE ARTIST */

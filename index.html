@@ -7,34 +7,186 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>My Spotify</title>
 </head>
 <body>
     <div class="wrapper">
-        <main class="d-flex">
+        <main class="flex">
             <aside>
 
             </aside>
-            <!-- CONTENITORE CONTENUTO CENTRALE -->
             <section class="main-content">
                 <div class="container-upgrate">
                     <a href="#" class="btn upgrate">EFFETTUA L&#39UPGRATE</a>
                 </div>
+                <!-- CONTENITORE CONTENUTO CENTRALE -->
                 <section class="inner-content">
-                <!--MENU CONTENUTO CENTRALE -->    
-                <nav class="main-content-nav">
-                    <ul class="main-content-nav-list">
-                        <li><a href="#" class="active-menu">IN EVIDENZA</a></li>
-                        <li><a href="#" class="line-menu">PODCAST</a></li>
-                        <li><a href="#" class="line-menu">CLASSIFICHE</a></li>
-                        <li><a href="#" class="line-menu">GENERI E MOOD</a></li>
-                        <li><a href="#" class="line-menu">NUOVE USCITE</a></li>
-                        <li><a href="#" class="line-menu">SCOPRI</a></li>
-                    </ul>
-                </nav>
-                    
+                    <!--MENU CONTENUTO CENTRALE -->    
+                    <nav class="main-content-nav">
+                        <ul class="main-content-nav-list">
+                            <li><a href="#" class="active-menu">IN EVIDENZA</a></li>
+                            <li><a href="#" class="line-menu">PODCAST</a></li>
+                            <li><a href="#" class="line-menu">CLASSIFICHE</a></li>
+                            <li><a href="#" class="line-menu">GENERI E MOOD</a></li>
+                            <li><a href="#" class="line-menu">NUOVE USCITE</a></li>
+                            <li><a href="#" class="line-menu">SCOPRI</a></li>
+                        </ul>
+                    </nav>
+                    <!-- CONTENITORE RECENTLY PLAYED --> 
+                    <div class="container-played">
+                        <h2>Recently Played</h2>
+                    <!-- CONTENITORE PLAYED-LIST -->  
+                        <div class="played-list flex">
+                            <!-- PRIMO ELEMENTO -->
+                            <div class="played-element">
+                                <div class="cover">
+                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <div class="img-layover"><i class="far fa-play-circle"></i></div>
+                                </div>
+                                <div class="cover-text">
+                                    <h3>Heavy Metal</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                            </div>
+                            <!-- FINE PRIMO ELEMENTO -->
+
+                            <!-- SECONDO ELEMENTO -->
+                            <div class="played-element">
+                                <div class="cover">
+                                    <img src="img/stranger.jpeg" alt="">
+                                    <div class="img-layover"><i class="far fa-play-circle"></i></div>
+                                </div>
+                                <div class="cover-text">
+                                    <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                                    <p>Kyle Dixon & Michael Stein</p>
+                                </div>
+                            </div>
+                            <!-- FINE SECONDO ELEMENTO -->
+
+                            <!-- TERZO ELEMENTO -->
+                            <div class="played-element">
+                                <div class="cover">
+                                    <img src="img/aquietplace.jpeg" alt="">
+                                    <div class="img-layover"><i class="far fa-play-circle"></i></div>
+                                </div>
+                                <div class="cover-text">
+                                    <h3>A quiet place</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                            </div>
+                            <!-- FINE TERZO ELEMENTO -->
+
+                            <!-- QUARTO ELEMENTO -->
+                            <div class="played-element">
+                                <div class="cover">
+                                    <img src="img/split.jpeg" alt="">
+                                    <div class="img-layover"><i class="far fa-play-circle"></i></div>
+                                </div>
+                                <div class="cover-text">
+                                    <h3>Split</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                            </div>
+                            <!-- FINE QUARTO ELEMENTO -->
+
+                            <!-- QUINTO ELEMENTO -->
+                            <div class="played-element">
+                                <div class="cover">
+                                    <img src="img/cure.jpeg" alt="">
+                                    <div class="img-layover"><i class="far fa-play-circle"></i></div>
+                                </div>
+                                <div class="cover-text">
+                                    <h3>A cure of wellness</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                            </div>
+                            <!-- FINE QUINTO ELEMENTO -->
+
+                            <!-- SESTO ELEMENTO -->
+                            <div class="played-element">
+                                <div class="cover">
+                                    <img src="img/sinister.jpeg" alt="">
+                                    <div class="img-layover"><i class="far fa-play-circle"></i></div>
+                                </div>
+                                <div class="cover-text">
+                                    <h3>Sinister</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                            </div>
+                            <!-- FINE SESTO ELEMENTO -->
+                        </div>
+                        <!-- FINE CONTENITORE PLAYED-LIST -->  
+                    </div>
+                    <!-- FINE CONTENITORE RECENTLY PLAYED --> 
+                    <!-- CONTENITORE CREATE -->
+                    <div class="container-create">
+                        <h2>Creato per John Dhoe</h2>
+                        <p>Più ascoltati, più accurati saranno i suggerimenti</p>
+                        <!-- CONTENITORE PLAYED-LIST -->
+                        <div class="played-list flex">
+                            <!-- PRIMO ELEMENTO -->
+                            <div class="played-element">
+                                <div class="cover">
+                                    <img src="img/radar.jpeg" alt="radar-image">
+                                    <div class="img-layover"><i class="far fa-play-circle"></i></div>
+                                </div>
+                                <div class="cover-text">
+                                    <h3>Release Radar</h3>
+                                </div>
+                            </div>
+                            <!-- FINE PRIMO ELEMENTO -->
+
+                            <!-- SECONDO ELEMENTO -->
+                            <div class="played-element">
+                                <div class="cover">
+                                    <img src="img/mixdaily.jpeg" alt="radar-image">
+                                    <div class="img-layover"><i class="far fa-play-circle"></i></div>
+                                </div>
+                                <div class="cover-text">
+                                    <h3>Daily Mix 1</h3>
+                                </div>
+                            </div>
+                            <!-- FINE SECONDO ELEMENTO -->
+                        </div>
+                        <!-- FINE CONTENITORE PLAYED-LIST -->
+                    </div>
+                    <!-- FINE CONTENITORE CREATE --> 
+                    <!-- CONTENITORE ARTIST -->
+                    <div class="container-artist">
+                        <h2>Artisti più popolari</h2>
+                        <p>Più ascoltati, più accurati saranno i suggerimenti</p>
+                        <!-- CONTENITORE PLAYED-LIST -->
+                        <div class="played-list flex">
+                            <div class="played-element">
+                                <div class="cover-rounded">
+                                    <img src="img/youg.jpeg" alt="radar-image">
+                                    <div class="img-layover"><i class="far fa-play-circle"></i></div>
+                                </div>
+                                <div class="cover-text">
+                                    <h3>Lana del Rey</h3>
+                                </div>
+                            </div>
+                            <!-- FINE PRIMO ELEMENTO -->
+
+                            <!-- SECONDO ELEMENTO -->
+                            <div class="played-element">
+                                <div class="cover-rounded">
+                                    <img src="img/einaudi.jpeg" alt="radar-image">
+                                    <div class="img-layover"><i class="far fa-play-circle"></i></div>
+                                </div>
+                                <div class="cover-text">
+                                    <h3>Ludovio Einaudi</h3>
+                                </div>
+                            </div>
+                            <!-- FINE SECONDO ELEMENTO -->
+                        </div>
+                        <!-- FINE CONTENITORE PLAYED-LIST -->
+                    </div>
+                    <!-- FINE CONTENITORE ARTIST -->
                 </section>
+                <!-- FINE CONTENITORE CONTENUTO CENTRALE -->
             </section>
         </main>
         <div class="playbar"></div>
