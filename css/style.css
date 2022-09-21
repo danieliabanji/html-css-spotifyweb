@@ -142,7 +142,7 @@ aside{
 /* RECENTLY PLAYED LIST */
 .played-list{
     flex-wrap: nowrap;
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 .played-element{
