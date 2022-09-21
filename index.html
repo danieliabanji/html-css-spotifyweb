@@ -14,16 +14,79 @@
 <body>
     <div class="wrapper">
         <main class="flex">
-            <aside>
-
-            </aside>
+            <!-- CONTENITORE MAIN NAV -->
+            <nav class="main-nav flex">
+                <!-- CONTENITORE TOP DELLA NAV -->
+                <div class="top-nav">
+                    <div class="logo-nav">
+                        <div class="logo">
+                            <a href="#" class="logo-grande"><img src="img/logo.svg" alt="logo-grande"></a>
+                            <a href="#" class="logo-piccolo"><img src="img/logo-small.svg" alt="logo-piccolo"></a>
+                        </div>
+    
+                    </div>
+                    <!-- CONTENITORE MENU NAV -->
+                    <div class="menu-nav">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="img/home.svg" alt="icon-home">
+                                    <span class="menu-text">Home</span>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="#"><img src="img/search.svg" alt="icon-search">
+                                    <span class="menu-text">Cerca</span>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="#"><img src="img/libreria.svg" alt="icon-library">
+                                    <span class="menu-text">La tua Libreria</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- CONTENITORE PLAYLIST -->
+                    <div class="container-playlist-nav">
+                        <h3>PLAYLIST</h3>
+                        <a href="#"><i class="fas fa-plus-square"></i><span>Crea Playlist</span></a>
+                    </div>
+                    <div class="playlist-nav">
+                        <ul>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- CONTENITORE BOTTOM DELLA NAV -->
+                <div class="bottom-nav">
+                    <div class="download-nav">
+                        <a href="#"><img src="img/download.svg" alt="icon-download"><span class="menu-text">Installa
+                                app</span></a>
+                    </div>
+                    <div class="profile-nav">
+                        <a href="#"><img src="img/profile.svg" alt=""><span class="menu-text">John Doe</span></a>
+                    </div>
+                </div>
+            </nav>
+            <!-- FINE CONTENITORE MAIN NAV -->
+            
+            <!-- CONTENITORE BOTTONE UPRGATE -->
             <section class="main-content">
                 <div class="container-upgrate">
                     <a href="#" class="btn upgrate">EFFETTUA L&#39UPGRATE</a>
                 </div>
+                <!-- CONTENITORE BOTTONE UPRGATE -->
+
                 <!-- CONTENITORE CONTENUTO CENTRALE -->
                 <section class="inner-content">
-                    <!--MENU CONTENUTO CENTRALE -->    
+                    <!--MENU CONTENUTO CENTRALE -->
                     <nav class="main-content-nav">
                         <ul class="main-content-nav-list">
                             <li><a href="#" class="active-menu">IN EVIDENZA</a></li>
@@ -34,10 +97,10 @@
                             <li><a href="#" class="line-menu">SCOPRI</a></li>
                         </ul>
                     </nav>
-                    <!-- CONTENITORE RECENTLY PLAYED --> 
+                    <!-- CONTENITORE RECENTLY PLAYED -->
                     <div class="container-played">
                         <h2>Recently Played</h2>
-                    <!-- CONTENITORE PLAYED-LIST -->  
+                        <!-- CONTENITORE PLAYED-LIST -->
                         <div class="played-list flex">
                             <!-- PRIMO ELEMENTO -->
                             <div class="played-element">
@@ -51,7 +114,7 @@
                                 </div>
                             </div>
                             <!-- FINE PRIMO ELEMENTO -->
-
+    
                             <!-- SECONDO ELEMENTO -->
                             <div class="played-element">
                                 <div class="cover">
@@ -64,7 +127,7 @@
                                 </div>
                             </div>
                             <!-- FINE SECONDO ELEMENTO -->
-
+    
                             <!-- TERZO ELEMENTO -->
                             <div class="played-element">
                                 <div class="cover">
@@ -77,7 +140,7 @@
                                 </div>
                             </div>
                             <!-- FINE TERZO ELEMENTO -->
-
+    
                             <!-- QUARTO ELEMENTO -->
                             <div class="played-element">
                                 <div class="cover">
@@ -90,7 +153,7 @@
                                 </div>
                             </div>
                             <!-- FINE QUARTO ELEMENTO -->
-
+    
                             <!-- QUINTO ELEMENTO -->
                             <div class="played-element">
                                 <div class="cover">
@@ -103,7 +166,7 @@
                                 </div>
                             </div>
                             <!-- FINE QUINTO ELEMENTO -->
-
+    
                             <!-- SESTO ELEMENTO -->
                             <div class="played-element">
                                 <div class="cover">
@@ -117,9 +180,9 @@
                             </div>
                             <!-- FINE SESTO ELEMENTO -->
                         </div>
-                        <!-- FINE CONTENITORE PLAYED-LIST -->  
+                        <!-- FINE CONTENITORE PLAYED-LIST -->
                     </div>
-                    <!-- FINE CONTENITORE RECENTLY PLAYED --> 
+                    <!-- FINE CONTENITORE RECENTLY PLAYED -->
                     <!-- CONTENITORE CREATE -->
                     <div class="container-create">
                         <h2>Creato per John Dhoe</h2>
@@ -137,7 +200,7 @@
                                 </div>
                             </div>
                             <!-- FINE PRIMO ELEMENTO -->
-
+    
                             <!-- SECONDO ELEMENTO -->
                             <div class="played-element">
                                 <div class="cover">
@@ -152,7 +215,7 @@
                         </div>
                         <!-- FINE CONTENITORE PLAYED-LIST -->
                     </div>
-                    <!-- FINE CONTENITORE CREATE --> 
+                    <!-- FINE CONTENITORE CREATE -->
                     <!-- CONTENITORE ARTIST -->
                     <div class="container-artist">
                         <h2>Artisti più popolari</h2>
@@ -169,7 +232,7 @@
                                 </div>
                             </div>
                             <!-- FINE PRIMO ELEMENTO -->
-
+    
                             <!-- SECONDO ELEMENTO -->
                             <div class="played-element">
                                 <div class="cover-rounded">
@@ -191,6 +254,5 @@
         </main>
         <div class="playbar"></div>
     </div>
-    
 </body>
 </html>
