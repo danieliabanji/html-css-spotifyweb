@@ -1,3 +1,4 @@
+/* Commons */
 :root{
     --nero-100: rgba(0, 0, 0, 1);
     --black-opacity: rgba(0, 0, 0, 0.5);
@@ -17,4 +18,116 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-grey);
+}
+
+a:hover{
+    color: var(--text-white);
+}
+
+.d-flex{
+    display: flex;
+}
+
+/* contenitori */
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+main{
+    width: 100%;
+    height: calc(100vh - 95px);
+}
+.main-content{
+    width: calc(100% - 230px);
+    height: 100%;
+    background-color: var(--deep-blue);
+    overflow: hidden;
+    
+}
+.inner-content{
+    width: 100%;
+    height: 100%;
+    background-color: var(--deep-blue);
+    overflow-y: scroll;
+    padding-top: 100px;
+}
+aside{
+    width: 230px;
+    height: 100%;
+    background-color: var(--nero-100);
+}
+.playbar{
+    width: 100%;
+    height: 95px;
+    background-color: var(--dark-grey);
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
+}
+
+/* CONTENUTO PRINCIPALE */
+
+/* REGOLE UPGRATE */
+.container-upgrate{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100px;
+    width: calc(100% - 230px);
+    padding-top: 25px;
+    z-index: 1;
+}
+.btn{
+    color:var(--text-white);
+    font-size: 12px;
+    text-decoration: none;
+    float: right;
+    margin-right: 40px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid var(--text-white);
+    font-weight: 600;
+}
+
+.btn:hover{
+    color:var(--text-grey);
+    border: 1px solid var(--text-grey);
+    transform: scale(1.1);
+}
+/*MENU CONTENUTO CENTRALE */
+.main-content-nav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: 600;
+}
+
+.main-content-nav ul li{
+    font-size: 12px;
+    padding: 20px 0px 5px 0px;
+    margin: 0px 20px;
+    position: relative;
+}
+
+/*MENU CONTENUTO CENTRALE LINEA VERDE CON HOVER*/
+.main-content-nav .main-content-nav-list li a:hover::after{
+    content: "";
+    height: 2px;
+    width: 40px;
+    background-color: #94dd25;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
